@@ -1,0 +1,121 @@
+{
+  "skill_name": "curso-dominandoclaudecode",
+  "iteration": 1,
+  "configurations": [
+    {
+      "name": "with_skill",
+      "evals": [
+        {
+          "id": 1,
+          "name": "skill-sem-execucao",
+          "assertions": [
+            {"text": "scripts", "passed": true, "evidence": "Resposta menciona explicitamente 'Skill com execucao (skill.md + pasta scripts/)' e diagnostico lista 'A skill tem pasta scripts/'"},
+            {"text": "execu", "passed": true, "evidence": "Resposta usa 'nao tem capacidade de acao real', 'execucao no sentido tecnico'"},
+            {"text": "reinstalar (avoids)", "passed": true, "evidence": "Nenhuma mencao a reinstalar"}
+          ],
+          "pass_rate": 1.0
+        },
+        {
+          "id": 2,
+          "name": "fpcn-nao-planejar",
+          "assertions": [
+            {"text": "plan", "passed": true, "evidence": "Resposta menciona FPCN e fase P (Planejar) explicitamente"},
+            {"text": "FPCN", "passed": true, "evidence": "Framework FPCN nomeado diretamente"},
+            {"text": "``` (avoids)", "passed": true, "evidence": "Nao criou arquivo nem codigo -- fez as perguntas corretas do FPCN antes"}
+          ],
+          "pass_rate": 1.0
+        },
+        {
+          "id": 3,
+          "name": "caso-hup-vibe-coding",
+          "assertions": [
+            {"text": "HUP", "passed": true, "evidence": "Resposta menciona HUP por nome"},
+            {"text": "programar", "passed": true, "evidence": "'sem saber programar'"},
+            {"text": "nao e possivel (avoids)", "passed": true, "evidence": "Resposta afirma que e possivel com exemplo concreto"}
+          ],
+          "pass_rate": 1.0
+        },
+        {
+          "id": 4,
+          "name": "estrutura-pasta-claude",
+          "assertions": [
+            {"text": "CLAUDE.md", "passed": true, "evidence": "Listado como primeiro pilar"},
+            {"text": "memory.md", "passed": true, "evidence": "Listado como segundo pilar"},
+            {"text": "agents", "passed": true, "evidence": "Pasta agents/ listada como pilar 4"},
+            {"text": "skills", "passed": true, "evidence": "Pasta skills/ listada como pilar 3"}
+          ],
+          "pass_rate": 1.0
+        },
+        {
+          "id": 5,
+          "name": "windows-powershell",
+          "assertions": [
+            {"text": "PowerShell", "passed": true, "evidence": "Resposta inicia com 'use o PowerShell 7'"},
+            {"text": "Node", "passed": true, "evidence": "Passo 1 e 'Instale o Node.js (pre-requisito)'"},
+            {"text": "CMD (avoids)", "passed": true, "evidence": "Nenhuma mencao ao CMD"}
+          ],
+          "pass_rate": 1.0
+        },
+        {
+          "id": 6,
+          "name": "caso-juliana-rh",
+          "assertions": [
+            {"text": "programar", "passed": true, "evidence": "'sem saber absolutamente nada de programacao'"},
+            {"text": "curriculo", "passed": true, "evidence": "Caso Juliana: 'consultora de RH que tria 300 curriculos por dia'"},
+            {"text": "nao consegue (avoids)", "passed": true, "evidence": "Resposta confirma que consegue com caso real"}
+          ],
+          "pass_rate": 1.0
+        },
+        {
+          "id": 7,
+          "name": "memory-vs-claudemd",
+          "assertions": [
+            {"text": "identidade", "passed": true, "evidence": "CLAUDE.md descrito como 'brief permanente sobre voce e seu negocio'"},
+            {"text": "memoria", "passed": true, "evidence": "memory.md descrito como 'Memoria viva (regras acumuladas)'"},
+            {"text": "sao iguais (avoids)", "passed": true, "evidence": "Distincao clara entre os dois"},
+            {"text": "mesmo arquivo (avoids)", "passed": true, "evidence": "Descritos como arquivos separados"}
+          ],
+          "pass_rate": 1.0
+        },
+        {
+          "id": 8,
+          "name": "agente-sem-skills",
+          "assertions": [
+            {"text": "skill", "passed": true, "evidence": "'Seu agente esta faltando Skills com execucao real'"},
+            {"text": "scripts", "passed": true, "evidence": "Diagnostico n.1: 'Sua skill nao tem pasta scripts/'"},
+            {"text": "ferramenta", "passed": true, "evidence": "Ponto 4: 'Se quer integrar com um sistema externo, ele precisa ter uma API'"},
+            {"text": "recriar (avoids)", "passed": true, "evidence": "Orienta a adicionar/corrigir, nao a recriar do zero"}
+          ],
+          "pass_rate": 1.0
+        }
+      ],
+      "overall_pass_rate": 1.0,
+      "total_assertions": 27,
+      "passed_assertions": 27
+    },
+    {
+      "name": "without_skill",
+      "evals": [
+        {"id": 1, "name": "skill-sem-execucao", "pass_rate": 0.67},
+        {"id": 2, "name": "fpcn-nao-planejar", "pass_rate": 0.0},
+        {"id": 3, "name": "caso-hup-vibe-coding", "pass_rate": 0.33},
+        {"id": 4, "name": "estrutura-pasta-claude", "pass_rate": 0.25},
+        {"id": 5, "name": "windows-powershell", "pass_rate": 1.0},
+        {"id": 6, "name": "caso-juliana-rh", "pass_rate": 0.67},
+        {"id": 7, "name": "memory-vs-claudemd", "pass_rate": 0.75},
+        {"id": 8, "name": "agente-sem-skills", "pass_rate": 0.5}
+      ],
+      "overall_pass_rate": 0.52,
+      "total_assertions": 27,
+      "passed_assertions": 14
+    }
+  ],
+  "summary": {
+    "with_skill_pass_rate": 1.0,
+    "without_skill_pass_rate": 0.52,
+    "knowledge_delta": 0.48,
+    "total_evals": 8,
+    "meets_threshold_pass_rate": true,
+    "meets_threshold_delta": true
+  }
+}

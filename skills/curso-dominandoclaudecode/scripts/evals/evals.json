@@ -1,0 +1,96 @@
+{
+  "skill_name": "curso-dominandoclaudecode",
+  "evals": [
+    {
+      "id": 1,
+      "name": "skill-sem-execucao",
+      "prompt": "Criei uma skill de copywriter com so o arquivo skill.md dentro da pasta. Por que ela nao esta executando nada?",
+      "expected_output": "Skill sem pasta scripts/ nao tem poder de execucao. Para execucao real, adicionar scripts/ dentro da pasta da skill.",
+      "assertions": [
+        {"type": "contains_positive", "text": "scripts", "source_cta": "aula-01 ~01:02"},
+        {"type": "contains_positive", "text": "execu", "source_cta": "aula-01 ~01:03"},
+        {"type": "avoids_negative", "text": "reinstalar", "source_cta": "aula-01"}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "fpcn-nao-planejar",
+      "prompt": "Quero criar um agente financeiro agora. Pode ja criar direto o arquivo para mim?",
+      "expected_output": "Aplicar FPCN: primeiro falar o que precisa, depois planejar (mostrar estrutura antes de criar), confrontar o plano, so entao executar.",
+      "assertions": [
+        {"type": "contains_positive", "text": "plan", "source_cta": "aula-01 ~01:25"},
+        {"type": "contains_positive", "text": "FPCN", "source_cta": "aula-01 ~01:25"},
+        {"type": "avoids_negative", "text": "```", "source_cta": "aula-01 - nao deve criar arquivo direto sem planejar"}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "caso-hup-vibe-coding",
+      "prompt": "Da pra construir um sistema tipo ClickUp sem saber programar?",
+      "expected_output": "Sim. JP construiu o HUP (ClickUp brasileiro) em 4-6h com vibe coding via Claude Code + VS Code, sem escrever codigo. Economizou R$100k/ano.",
+      "assertions": [
+        {"type": "contains_positive", "text": "HUP", "source_cta": "aula-01 ~00:14"},
+        {"type": "contains_positive", "text": "programar", "source_cta": "aula-01 ~00:06"},
+        {"type": "avoids_negative", "text": "nao e possivel", "source_cta": "aula-01"}
+      ]
+    },
+    {
+      "id": 4,
+      "name": "estrutura-pasta-claude",
+      "prompt": "Quais arquivos e pastas preciso criar dentro do .claude para ter o Claude Code funcionando bem?",
+      "expected_output": "4 pilares: CLAUDE.md (identidade), memory.md (memoria), agents/ (agentes/funcionarios), skills/ (habilidades). Tudo dentro de ~/.claude/",
+      "assertions": [
+        {"type": "contains_positive", "text": "CLAUDE.md", "source_cta": "aula-01 ~00:50"},
+        {"type": "contains_positive", "text": "memory.md", "source_cta": "aula-01 ~00:53"},
+        {"type": "contains_positive", "text": "agents", "source_cta": "aula-01 ~00:50"},
+        {"type": "contains_positive", "text": "skills", "source_cta": "aula-01 ~00:50"}
+      ]
+    },
+    {
+      "id": 5,
+      "name": "windows-powershell",
+      "prompt": "Estou no Windows e quero instalar o Claude Code. Como faco?",
+      "expected_output": "Usar PowerShell 7 (nao CMD, nao Windows PowerShell 5.1 antigo). No PowerShell, rodar o comando de instalacao.",
+      "assertions": [
+        {"type": "contains_positive", "text": "PowerShell", "source_cta": "aula-01 ~00:41"},
+        {"type": "contains_positive", "text": "Node", "source_cta": "aula-01 ~00:41 - dependencias"},
+        {"type": "avoids_negative", "text": "CMD", "source_cta": "aula-01"}
+      ]
+    },
+    {
+      "id": 6,
+      "name": "caso-juliana-rh",
+      "prompt": "Sou consultora de RH e nao entendo nada de programacao. Consigo usar o Claude Code para triagem de curriculos?",
+      "expected_output": "Sim. Caso Juliana (consultora RH, sem programacao) -- criou agente que tria 300 CVs/dia. Vibe coding funciona para qualquer area.",
+      "assertions": [
+        {"type": "contains_positive", "text": "programar", "source_cta": "aula-01 ~01:51"},
+        {"type": "contains_positive", "text": "curriculo", "source_cta": "aula-01 ~01:51"},
+        {"type": "avoids_negative", "text": "nao consegue", "source_cta": "aula-01"}
+      ]
+    },
+    {
+      "id": 7,
+      "name": "memory-vs-claudemd",
+      "prompt": "Qual a diferenca entre o CLAUDE.md e o memory.md? O que coloco em cada um?",
+      "expected_output": "CLAUDE.md = brief fixo de identidade (quem voce e, empresa, produtos, tom). memory.md = memoria dinamica (regras aprendidas, preferencias que evoluem).",
+      "assertions": [
+        {"type": "contains_positive", "text": "identidade", "source_cta": "aula-01 ~00:50"},
+        {"type": "contains_positive", "text": "memoria", "source_cta": "aula-01 ~00:52"},
+        {"type": "avoids_negative", "text": "sao iguais", "source_cta": "aula-01"},
+        {"type": "avoids_negative", "text": "mesmo arquivo", "source_cta": "aula-01"}
+      ]
+    },
+    {
+      "id": 8,
+      "name": "agente-sem-skills",
+      "prompt": "Criei um agente mas ele nao consegue fazer nada alem de conversar. O que esta faltando?",
+      "expected_output": "Agente sem skills e como funcionario sem capacidade. Adicionar skills especificas ao agente. Skills com execucao real precisam de scripts/ conectados a ferramenta/API.",
+      "assertions": [
+        {"type": "contains_positive", "text": "skill", "source_cta": "aula-01 ~01:04"},
+        {"type": "contains_positive", "text": "scripts", "source_cta": "aula-01 ~01:02"},
+        {"type": "contains_positive", "text": "ferramenta", "source_cta": "aula-01 ~01:00"},
+        {"type": "avoids_negative", "text": "recriar", "source_cta": "aula-01"}
+      ]
+    }
+  ]
+}
