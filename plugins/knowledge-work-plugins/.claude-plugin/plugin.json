@@ -1,0 +1,9 @@
+{
+  "name": "knowledge-work-plugins",
+  "description": "Skills para trabalho financeiro e contábil: reconciliação GL×subrazão, conciliação bancária, reconciliação intercompany, categorização de itens e análise de aging.",
+  "version": "1.0.0",
+  "author": {
+    "name": "isabelamorato"
+  },
+  "homepage": "https://github.com/isabelamorato/biblioteca"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "biblioteca",
+  "description": "Biblioteca pessoal de skills e plugins do Claude Code — ferramentas financeiras, contábeis e de produtividade",
+  "owner": {
+    "name": "isabelamorato"
+  },
+  "plugins": [
+    {
+      "name": "knowledge-work-plugins",
+      "description": "Skills para trabalho financeiro e contábil: reconciliação GL×subrazão, conciliação bancária, reconciliação intercompany, categorização de itens e análise de aging.",
+      "source": "./plugins/knowledge-work-plugins",
+      "version": "1.0.0",
+      "category": "productivity",
+      "tags": ["reconciliation", "accounting", "finance", "bank-reconciliation"]
+    }
+  ]
+}
