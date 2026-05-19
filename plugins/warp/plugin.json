@@ -1,0 +1,6 @@
+{
+  "name": "warp",
+  "description": "Warp terminal integration for Claude Code",
+  "version": "2.0.0",
+  "author": "Warp"
+}

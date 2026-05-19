@@ -1,0 +1,24 @@
+{
+  "hooks": {
+    "SessionStart": {
+      "script": "scripts/on-session-start.sh"
+    },
+    "Stop": {
+      "script": "scripts/on-stop.sh"
+    },
+    "Notification": {
+      "idle_prompt": {
+        "script": "scripts/on-notification.sh"
+      }
+    },
+    "PermissionRequest": {
+      "script": "scripts/on-permission-request.sh"
+    },
+    "UserPromptSubmit": {
+      "script": "scripts/on-prompt-submit.sh"
+    },
+    "PostToolUse": {
+      "script": "scripts/on-post-tool-use.sh"
+    }
+  }
+}
