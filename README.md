@@ -30,6 +30,7 @@ No Claude Code, basta digitar `/nome-da-skill` no chat. Exemplo: `/pesquisa inte
 | [planejar](skills/planejar/SKILL.md) | Metodologia em 8 fases para planejar produtos digitais (web app, SaaS, API, mobile) antes de escrever código — do brainstorm ao plano de implementação auditado. |
 | [polish](skills/polish/SKILL.md) | Faz um passe final de qualidade antes de entregar: alinhamento, espaçamento, consistência e micro-detalhes que separam um trabalho bom de um trabalho excelente. |
 | [resumo-whatsapp](skills/resumo-whatsapp/SKILL.md) | Resume conversas exportadas de grupos do WhatsApp destacando decisões tomadas, pendências e temas em debate. Ideal para quando você perdeu mensagens ou voltou de férias. |
+| [site2skill](skills/site2skill/SKILL.md) | Gera automaticamente uma skill cliente de API para qualquer site. Você exporta um HAR do Chrome, ela detecta o modo correto (simples com curl+cookies, ou CDP com Chrome real para sites com Cloudflare/CSRF) e cria a skill pronta para uso. |
 | [social-content](skills/social-content/SKILL.md) | Cria e otimiza conteúdo para redes sociais: LinkedIn, Twitter/X, Instagram, TikTok. Posts, threads, carrosséis, calendário de conteúdo e estratégias de engajamento. |
 | [supabase-postgres-best-practices](skills/supabase-postgres-best-practices/SKILL.md) | Guia completo de otimização de performance no Postgres (Supabase). Cobre queries, schema, conexões, índices, locks, segurança (RLS) e monitoramento — 8 categorias de regras. |
 
