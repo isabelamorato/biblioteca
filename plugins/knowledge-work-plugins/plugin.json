@@ -1,0 +1,14 @@
+{
+  "name": "knowledge-work-plugins",
+  "description": "Skills for knowledge work: account reconciliation, bank reconciliation, intercompany reconciliation, and financial close workflows",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "reconciliation",
+    "accounting",
+    "finance",
+    "bank-reconciliation",
+    "gl",
+    "close"
+  ]
+}

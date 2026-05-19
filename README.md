@@ -50,6 +50,7 @@ No Claude Code, basta digitar `/nome-da-skill` no chat. Exemplo: `/pesquisa inte
 | [claude-code-setup](plugins/claude-code-setup/) | Analisa um codebase e recomenda automações para o Claude Code (hooks, subagentes, skills). |
 | [security-guidance](plugins/security-guidance/) | Orientações de segurança para código e infraestrutura. |
 | [warp](plugins/warp/) | Integração com o terminal Warp — notificações e hooks de sessão. |
+| [knowledge-work-plugins](plugins/knowledge-work-plugins/) | Skills para trabalho financeiro e contábil: reconciliação GL×subrazão, conciliação bancária, reconciliação intercompany, categorização de itens e análise de aging. |
 
 ---
 
