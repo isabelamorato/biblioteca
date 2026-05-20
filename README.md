@@ -12,6 +12,8 @@ No Claude Code, basta digitar `/nome-da-skill` no chat. Exemplo: `/pesquisa inte
 
 ## Skills
 
+### Hospedadas neste repositório
+
 | Skill | O que faz |
 |---|---|
 | [arquiteto-academico](skills/arquiteto-academico/SKILL.md) | Gera cursos completos prontos para gravação: blueprint estratégico, roteiros para teleprompter e materiais de apoio em PDF. Opera como 3 entidades cognitivas (Arquiteto, Roteirista, Revisor). |
@@ -33,6 +35,12 @@ No Claude Code, basta digitar `/nome-da-skill` no chat. Exemplo: `/pesquisa inte
 | [site2skill](skills/site2skill/SKILL.md) | Gera automaticamente uma skill cliente de API para qualquer site. Você exporta um HAR do Chrome, ela detecta o modo correto (simples com curl+cookies, ou CDP com Chrome real para sites com Cloudflare/CSRF) e cria a skill pronta para uso. |
 | [social-content](skills/social-content/SKILL.md) | Cria e otimiza conteúdo para redes sociais: LinkedIn, Twitter/X, Instagram, TikTok. Posts, threads, carrosséis, calendário de conteúdo e estratégias de engajamento. |
 | [supabase-postgres-best-practices](skills/supabase-postgres-best-practices/SKILL.md) | Guia completo de otimização de performance no Postgres (Supabase). Cobre queries, schema, conexões, índices, locks, segurança (RLS) e monitoramento — 8 categorias de regras. |
+
+### Skills externas instaladas via `npx skills add`
+
+| Skill | Fonte | O que faz |
+|---|---|---|
+| [tdd](https://github.com/mattpocock/skills/blob/main/skills/engineering/tdd/SKILL.md) | [mattpocock/skills](https://github.com/mattpocock/skills) | TDD com loop red-green-refactor. Abordagem vertical (tracer bullet): um teste → uma implementação por ciclo. Testa comportamento via interfaces públicas, não detalhes de implementação. |
 
 ---
 
