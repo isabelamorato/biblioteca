@@ -38,6 +38,8 @@ No Claude Code, basta digitar `/nome-da-skill` no chat. Exemplo: `/pesquisa inte
 
 ## Plugins
 
+### Hospedados neste repositório
+
 | Plugin | O que é |
 |---|---|
 | [superpowers](plugins/superpowers/) | Conjunto de skills de processo: brainstorming, TDD, debugging, planejamento, code review, worktrees e mais. Base do workflow de desenvolvimento. |
@@ -52,6 +54,15 @@ No Claude Code, basta digitar `/nome-da-skill` no chat. Exemplo: `/pesquisa inte
 | [warp](plugins/warp/) | Integração com o terminal Warp — notificações e hooks de sessão. |
 | [knowledge-work-plugins](plugins/knowledge-work-plugins/) | Skills para trabalho financeiro e contábil: reconciliação GL×subrazão, conciliação bancária, reconciliação intercompany, categorização de itens e análise de aging. |
 
+### Marketplace externo — [thaleslaray/plugins](https://github.com/thaleslaray/plugins)
+
+| Plugin | O que é |
+|---|---|
+| [rh](https://github.com/thaleslaray/plugins/tree/main/plugins/rh) | RH automatizado scorecard-first. Pipeline de contratação com `/rh:contratar`: infere scorecard, descobre candidatos via GitHub e registries, curadoria item-a-item. |
+| [pesquisa](https://github.com/thaleslaray/plugins/tree/main/plugins/pesquisa) | Pesquisa profunda em funil multi-nível — versão evoluída com nível 3 paralelo por sub-tópico e reflection gate antes de fechar o relatório. |
+| [hotmart](https://github.com/thaleslaray/plugins/tree/main/plugins/hotmart) | MCP server da API Hotmart — vendas, assinaturas, club, produtos, cupons, tickets e negociação. Auto-gerado do OpenAPI oficial. |
+| [clint](https://github.com/thaleslaray/plugins/tree/main/plugins/clint) | MCP server do CRM Clint (brasileiro) — 46 endpoints em 14 categorias: contatos, deals, tags, chats, mensagens WhatsApp, dashboards e mais. |
+
 ---
 
 ## Estrutura do repositório
@@ -59,5 +70,5 @@ No Claude Code, basta digitar `/nome-da-skill` no chat. Exemplo: `/pesquisa inte
 ```
 biblioteca/
 ├── skills/          # Skills customizadas instaladas no Claude
-└── plugins/         # Plugins instalados no Claude Code
+└── plugins/         # Plugins hospedados neste repositório
 ```
